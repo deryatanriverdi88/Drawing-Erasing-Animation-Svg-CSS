@@ -140,3 +140,13 @@ svg{
 	animation-delay: -6.5s;
 	animation-fill-mode: forwards;
 }
+
+button{
+	position: relative;
+	top: -610px;
+	left:180px;
+	width: 10%;
+	height: 5vh;
+	border-radius: 10px;
+	outline: none;
+}
