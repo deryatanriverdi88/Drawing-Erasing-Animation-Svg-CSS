@@ -1,0 +1,6 @@
+let button = document.querySelector("button")
+let pathOne = document.querySelector("path:nth-child(1)")
+let pathTwo = document.querySelector("path:nth-child(2)")
+let pathThree = document.querySelector("path:nth-child(3)")
+let pathFour = document.querySelector("path:nth-child(4)")
+let pencil = document.querySelector(".pencil")
