@@ -1,0 +1,142 @@
+body{
+	background:#0297db;
+}
+
+.svg-div{
+	position: absolute;
+}
+
+.pencil{
+	width: 100px;
+	height: 100px;
+	transform: rotate(10deg);
+	position: relative;
+	top: 47px;
+	left: 106px;
+	z-index: 1;
+}
+
+.eraser{
+  width: 15.5px;
+  height: 10px;
+  background: #df3b57;
+  position: relative;
+  top: 45px;
+  left: 97px;
+  transform: rotate(22deg);
+  border-radius: 1px 1px 0 0 ;
+}
+
+.eraser:before{
+  background: #8d8d8d;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.bottom{
+  width: 15.5px;
+  height: 195px;
+  background: #e9c84c;
+  position: relative;
+  top: 43px;
+  left: 60px;
+  transform: rotate(20deg);
+  z-index: -1;
+}
+
+.bottom:before, .bottom:after{
+  content: "";
+  display:inline-block;
+  width: 0;
+  height:0;
+  border-top: 20px solid #dead96;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: 195px;
+  left: -0.4px;
+}
+
+.bottom:after{
+  border-top: 5px solid black;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  left:5.5px;
+  top: 210px;
+}
+
+svg{
+	fill: none;
+	width: 900px;
+	height: auto;
+	position: relative;
+	top: -100px;
+  stroke-dashoffset: 210;
+	stroke-dasharray: 210;
+	stroke: black;
+	stroke-width:0.2;
+}
+
+.drawing {
+	animation: drawing 8.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.erase{
+	top: 247px;
+	transform: rotate(180deg);
+	animation: erasing  9.6s linear;
+	animation-fill-mode: forwards;
+}
+
+.line{
+	animation: line 14.5s steps(200, end);
+	animation-fill-mode: forwards;
+}
+
+.line-2{
+	animation: line 14.5s steps(200, end);
+	animation-delay: 2.2s;
+	animation-fill-mode: forwards;
+}
+
+.line-3{
+	animation: line 14.5s steps(200, end);
+	animation-delay: 4.25s;
+	animation-fill-mode: forwards;
+}
+
+.line-4{
+	animation: line 14.5s steps(200, end);
+	animation-delay: 6.35s;
+	animation-fill-mode: forwards;
+}
+
+.line-erase{
+	animation: line-erase-animation 15.2s steps(200, end);
+	animation-fill-mode: forwards;
+	animation-delay: -12.9s;
+}
+
+.line-erase-2{
+	animation: line-erase-animation 15.13s steps(200, end);
+	animation-delay: -10.5s;
+	animation-fill-mode: forwards;
+}
+
+.line-erase-3{
+	animation: line-erase-animation 15.5s steps(200, end);
+	animation-delay: -8.5s;
+	animation-fill-mode: forwards;
+}
+
+.line-erase-4{
+	animation: line-erase-animation 16s steps(200, end);
+	animation-delay: -6.5s;
+	animation-fill-mode: forwards;
+}
