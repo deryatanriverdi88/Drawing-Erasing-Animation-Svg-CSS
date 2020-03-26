@@ -150,3 +150,71 @@ button{
 	border-radius: 10px;
 	outline: none;
 }
+
+@keyframes drawing {
+	0%{
+		top: 18px;
+		left: 98px;
+	}
+	25%{
+		top: 18px;
+		left: 368px;
+	}
+	50%{
+		top: 290px;
+		left: 368px;
+	}
+	75%{
+		top: 290px;
+		left: 98px;
+	}
+
+	100%{
+		top: 18px;
+		left: 98px;
+	}
+}
+
+@keyframes erasing {
+	0%{
+		top: 220px;
+		left: 98px;
+	}
+	25%{
+		top: 490px;
+		left: 98px;
+	}
+	50%{
+		top: 490px;
+		left: 370px;
+	}
+	75%{
+		top: 220px;
+		left: 370px;
+	}
+
+	100%{
+		top: 220px;
+		left: 98px;
+	}
+}
+
+@keyframes line{
+
+	from {
+		stroke-dashoffset: 210;
+	}
+	to{
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes line-erase-animation{
+
+	from {
+		stroke-dashoffset:0;
+	}
+	to{
+		stroke-dashoffset: 210;
+	}
+}
